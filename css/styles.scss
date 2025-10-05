@@ -1,1 +1,101 @@
-@import "normalise.css";
+@import "normalize.css";
+
+@font-face {
+  font-family: "Lexend";
+  src: url(/assets/fonts/Lexend-Regular.woff2) format("woff2");
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+.landing {
+  background: linear-gradient(180deg, #1d2238 0%, #190625 50%, #000000 100%);
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .landing__navbar {
+    margin-top: 10px;
+    color: #dcfffd;
+    font-family: Lexend;
+    width: 80vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+
+    .navbar__logo {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    .navbar__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 100;
+      gap: 15px;
+    }
+  }
+
+  .landing__navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    );
+  }
+
+  .landing__navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8),
+      transparent,
+      rgba(255, 255, 255, 0.3)
+    );
+  }
+
+  .landing__title {
+    margin-top: 200px;
+    color: #dcfffd;
+    font-size: 3rem;
+    font-family: "Lexend";
+  }
+}
+
+.main {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+}
