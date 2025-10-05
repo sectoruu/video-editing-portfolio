@@ -7,27 +7,55 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="cursor-dot"></div>
     <section class="landing">
       <nav class="landing__navbar">
         <div class="navbar__logo">
           <p>S</p>
         </div>
         <div class="navbar__links">
-          <p class="links__works">Works</p>
-          <p class="links__contact">Contact</p>
+          <a href="#portfolio">Works</a>
+          <a href="">Contact</a>
         </div>
       </nav>
-      <p class="landing__title">Your style is your face.</p>
+      <p class="landing__title">Style is your face.</p>
       <p class="landing__greetings">
-        Get breathtaking videos that satisfy your needs
+        Hey, I'm Artem (aka Sectoruu), a video editor solving clients problems
+        and making edits that attact people. Specializing in
+        <b>short-form content</b> and working with <b>Content Makers</b>
       </p>
       <div class="landing__buttons">
-        <a href="" class="buttons__see-works">See works</a>
+        <a href="#portfolio" class="buttons__see-works">See works</a>
         <button class="buttons__contact-me">Contact me</button>
       </div>
     </section>
 
-    <section class="main" id="back-main"></section>
+    <section class="first-color-gradient"></section>
+
+    <section class="portfolio">
+      <div class="portfolio__divider"></div>
+      <p class="portfolio__title" id="portfolio">&lt; Portfolio &gt;</p>
+      <div class="portfolio__works">
+        <div class="work">
+          <iframe
+            src="https://www.youtube.com/embed/0UyOAtjKXpM?modestbranding=1&controls=1&showinfo=0&rel=0"
+            title="Shorts"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div class="work">
+          <iframe
+            src="https://www.youtube.com/embed/vy-1APLP5BY?modestbranding=1&controls=1&showinfo=0&rel=0"
+            title="Shorts"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      <section class="second-color-gradient"></section>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
