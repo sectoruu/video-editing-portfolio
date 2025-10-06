@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <meta name="theme-color" content="#E0C6FF" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
   </head>
   <body>
     <div class="cursor-dot"></div>
@@ -15,22 +21,20 @@
         </div>
         <div class="navbar__links">
           <a href="#portfolio">Works</a>
-          <a href="">Contact</a>
+          <a href="#footer__contacts">Contact</a>
         </div>
       </nav>
-      <p class="landing__title">Style is your face.</p>
+      <p class="landing__title">Your idea. My interpretation.</p>
       <p class="landing__greetings">
-        Hey, I'm Artem (aka Sectoruu), a video editor solving clients problems
-        and making edits that attact people. Specializing in
-        <b>short-form content</b> and working with <b>Content Makers</b>
+        Hey, I'm Artem (aka Sectoruu) - a video editor helping clients solve
+        problems and creating edits that attract people. I specialize in
+        <b>short-form content</b> and work with <b>Content Makers</b>
       </p>
       <div class="landing__buttons">
         <a href="#portfolio" class="buttons__see-works">See works</a>
-        <button class="buttons__contact-me">Contact me</button>
+        <a href="#footer__contacts" class="buttons__contact-me">Contact me</a>
       </div>
     </section>
-
-    <section class="first-color-gradient"></section>
 
     <section class="portfolio">
       <div class="portfolio__divider"></div>
@@ -43,6 +47,12 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             frameborder="0"
           ></iframe>
+          <p class="work__note">
+            <i
+              >✦ Practice edit by me. Original video belongs to Andrew
+              Huberman</i
+            >
+          </p>
         </div>
         <div class="work">
           <iframe
@@ -53,9 +63,47 @@
           ></iframe>
         </div>
       </div>
-      <section class="second-color-gradient"></section>
+      <div class="portfolio__divider"></div>
     </section>
 
+    <footer class="footer">
+      <p class="footer__call">Interested? Let's work <b>Together</b></p>
+      <div id="footer__contacts" class="footer__contacts">
+        <a href="" class="contacts__twitter" target="_blank">
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>X</title>
+            <path
+              d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"
+            />
+          </svg>
+        </a>
+        <div class="contacts__divider"></div>
+        <a
+          href="https://t.me/SecToruu"
+          class="contacts__telegram"
+          target="_blank"
+        >
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Telegram</title>
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+            />
+          </svg>
+        </a>
+      </div>
+      <footer class="footer__copyrights">
+        <p></p>
+        <p>&copy;2025 All rights reserved</p>
+      </footer>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
