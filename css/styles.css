@@ -1,7 +1,7 @@
 @import "normalize.css";
 @font-face {
   font-family: "Lexend";
-  src: url(video-editing-portfolio/assets/fonts/Lexend-Regular.woff2) format("woff2");
+  src: url(tree/main/assets/fonts/Lexend-Regular.woff2) format("woff2");
 }
 html::before {
   content: "";
@@ -19,7 +19,12 @@ body {
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #0a0a0f 40px), repeating-linear-gradient(rgba(48, 19, 79, 0.3333333333), #30134f);
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #0a0a0f 40px
+    ),
+    repeating-linear-gradient(rgba(48, 19, 79, 0.3333333333), #30134f);
 }
 
 *,
@@ -42,7 +47,8 @@ iframe {
   border: 1px solid rgba(255, 255, 255, 0.2);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease, transform 0.1s ease;
+  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease,
+    transform 0.1s ease;
   box-shadow: 0 0 4px white, 0 0 4px white;
 }
 
@@ -98,7 +104,8 @@ iframe {
 .landing .landing__navbar .navbar__links a {
   color: #e0c6ff;
   text-decoration: none;
-  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease, transform 0.1s ease, opacity 0.1s ease-in-out, text-shadow 0.2s ease;
+  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease,
+    transform 0.1s ease, opacity 0.1s ease-in-out, text-shadow 0.2s ease;
 }
 .landing .landing__navbar .navbar__links a:hover {
   text-shadow: 0 0 1px #e0c6ff, 0 0 1px #e0c6ff;
@@ -119,7 +126,8 @@ iframe {
   opacity: 80%;
   max-width: 600px;
   text-align: center;
-  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease, transform 0.1s ease, opacity 0.1s ease-in-out;
+  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease,
+    transform 0.1s ease, opacity 0.1s ease-in-out;
 }
 .landing .landing__greetings:hover {
   opacity: 100%;
@@ -141,7 +149,8 @@ iframe {
   backdrop-filter: blur(4.7px);
   -webkit-backdrop-filter: blur(4.7px);
   border: 1px solid rgba(224, 198, 255, 0.3);
-  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease, transform 0.1s ease, opacity 0.1s ease-in-out, box-shadow 0.2s ease;
+  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease,
+    transform 0.1s ease, opacity 0.1s ease-in-out, box-shadow 0.2s ease;
 }
 .landing .landing__buttons a:hover {
   box-shadow: 0 0 4px #e0c6ff, 0 0 4px #e0c6ff;
@@ -156,7 +165,8 @@ iframe {
   backdrop-filter: blur(4.7px);
   -webkit-backdrop-filter: blur(4.7px);
   border: 1px solid rgba(224, 198, 255, 0.58);
-  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease, transform 0.1s ease, opacity 0.1s ease-in-out, box-shadow 0.2s ease;
+  transition: width 0.15s ease, height 0.15s ease, background 0.2s ease,
+    transform 0.1s ease, opacity 0.1s ease-in-out, box-shadow 0.2s ease;
 }
 .landing .landing__buttons .buttons__contact-me:hover {
   box-shadow: 0 0 4px #e0c6ff, 0 0 4px #e0c6ff;
@@ -169,7 +179,13 @@ iframe {
   align-items: center;
   font-family: "Lexend";
   color: #e0c6ff;
-  background: linear-gradient(0deg, transparent 0%, #0a0a0f 5%, #0a0a0f 95%, transparent 100%);
+  background: linear-gradient(
+    0deg,
+    transparent 0%,
+    #0a0a0f 5%,
+    #0a0a0f 95%,
+    transparent 100%
+  );
   background-color: transparent;
   padding-bottom: 150px;
 }
@@ -308,4 +324,4 @@ iframe {
   .portfolio .portfolio__works .work .work__note {
     font-size: 0.8rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
