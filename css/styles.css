@@ -1,7 +1,7 @@
 @import "normalize.css";
 @font-face {
   font-family: "Lexend";
-  src: url(tree/main/assets/fonts/Lexend-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Lexend-Regular.woff2) format("woff2");
 }
 html::before {
   content: "";
